@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 5 - Tabel dan Gambar HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 30px;
+            background-color: #f4f7fb;
+            color: #222;
+        }
+
+        h1 {
+            text-align: center;
+            color: #17365d;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        thead {
+            background-color: #cfe2f3;
+        }
+
+        .judul-kelompok {
+            background-color: #d9ead3;
+            font-weight: bold;
+        }
+
+        figure {
+            text-align: center;
+            margin: 30px auto;
+        }
+
+        figure img {
+            width: 100%;
+            max-width: 550px;
+            height: auto;
+            border: 2px solid #555;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tugas 5: Tabel HTML Lengkap dan Gambar</h1>
+
+    <h2>A. Tabel Data Siswa</h2>
+    <table border="1" cellpadding="8" cellspacing="0">
+        <thead>
+            <tr>
+                <th rowspan="2" valign="middle">No.</th>
+                <th colspan="2" align="center">Identitas Siswa</th>
+                <th rowspan="2" valign="middle">Jurusan</th>
+            </tr>
+            <tr>
+                <th>Nama</th>
+                <th>NIM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td align="center">1</td>
+                <td>Andi Pratama</td>
+                <td align="center">24001</td>
+                <td bgcolor="#fff2cc">Rekayasa Perangkat Lunak</td>
+            </tr>
+            <tr>
+                <td align="center">2</td>
+                <td>Siti Rahma</td>
+                <td align="center">24002</td>
+                <td bgcolor="#d9ead3">Desain Komunikasi Visual</td>
+            </tr>
+            <tr>
+                <td align="center">3</td>
+                <td>Budi Santoso</td>
+                <td align="center">24003</td>
+                <td bgcolor="#fce5cd">Teknik Komputer</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><strong>Jumlah siswa</strong></td>
+                <td colspan="2" align="center" bgcolor="#cfe2f3"><strong>3 siswa</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>B. Gambar dengan &lt;figure&gt;</h2>
+    <figure>
+        <img src="gambar-sekolah.jpg" alt="Gambar suasana sekolah">
+        <figcaption>Gambar 1. Ilustrasi suasana sekolah.</figcaption>
+    </figure>
+
+    <p><strong>Catatan:</strong> Letakkan file gambar bernama <code>gambar-sekolah.jpg</code>
+    di folder yang sama dengan file HTML ini. Kamu boleh mengganti nama file pada atribut
+    <code>src</code> sesuai nama gambar yang kamu punya.</p>
+</body>
+</html>
